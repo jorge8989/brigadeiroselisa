@@ -13,4 +13,15 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require bootstrap.min
+//= require ./fullspoon/isotope.pkgd.min
+//= require ./fullspoon/magnific-popup/jquery.magnific-popup.min
+//= require ./fullspoon/easing
+//= require ./fullspoon/classie
+//= require ./fullspoon/cbpAnimatedHeader.min
+//= require ./fullspoon/wow.min
+//= require ./fullspoon/owl-carousel/owl.carousel
+//= require ./fullspoon/video/bgvideo/backgroundVideo
+//= require ./fullspoon/fullspoon
+//= require ./fullspoon/jqBootstrapValidation
+//= require ./fullspoon/contact_me
