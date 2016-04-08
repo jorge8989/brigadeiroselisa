@@ -35,10 +35,10 @@
 <!-- Header -->
 <!-- Full-width video -->
 <div id="video-wrap" class="video-wrap">
-  <!--<video preload="metadata" autoplay loop id="bgvideo">
-    <source src="video/assets/MP4/Three-Cocktails.mp4" type="video/mp4">
-    <source src="video/assets/WEBM/Three-Cocktails.webm" type="video/webm">
-  </video>-->
+  <video preload="metadata" autoplay loop id="bgvideo">
+    <source src="<%= asset_path('videos/MP4/Three-Cocktails.mp4')%>" type="video/mp4">
+    <source src="<%= asset_path('videos/WEBM/Three-Cocktails.webm')%>" type="video/webm">
+  </video>
   <div class="content-overlay text-center">
    
      <!-- Intro Section: Logo, Heading & Address -->
@@ -71,8 +71,7 @@
         <div class="fadeInDown wow">
           <h2 class="section-heading">About <span class=
                     "orange-accent">us</span></h2>
-          <h3 class="section-subheading">We are a small bakery and we
-            craft delicious desserts.</h3>
+          <h3 class="section-subheading">We are a small bakery and we craft delicious desserts.</h3>
         </div>
       </div>
     </div>
@@ -83,7 +82,7 @@
       <div class="border">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <p class="mrgn30-btm"><img alt="border" class="img-responsive center-block" height="26" src="img/border.svg" width="177"></p>
+            <p class="mrgn30-btm"><%= image_tag 'border.svg', alt: 'border', class: 'img-responsive center-block', height: '26', width: '177' %></p>
           </div>
         </div>
       </div>
@@ -140,7 +139,7 @@
       <div class="border">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <p class="mrgn30-btm"><img alt="border" class="img-responsive center-block" height="26" src="img/border-white.svg" width="177"></p>
+            <p class="mrgn30-btm"><%= image_tag 'border.svg', alt: 'border', class: 'img-responsive center-block', height: '26', width: '177' %></p>
           </div>
         </div>
       </div>
@@ -199,7 +198,7 @@
       <div class="border">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <p class="mrgn30-btm"><img alt="border" class="img-responsive center-block" height="26" src="img/border-white.svg" width="177"></p>
+            <p class="mrgn30-btm"><%= image_tag 'border-white.svg', alt: 'border', class: 'img-responsive center-block', height: '26', width: '177' %></p>
           </div>
         </div>
       </div>
@@ -434,7 +433,7 @@
       <div class="border">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <p class="mrgn30-btm"><img alt="border" class="img-responsive center-block" height="26" src="img/border.svg" width="177"></p>
+            <p class="mrgn30-btm"><%= image_tag 'border.svg', alt: 'border', class: 'img-responsive center-block', height: '26', width: '177' %></p>
           </div>
         </div>
       </div>
@@ -470,7 +469,7 @@
             <!-- Gallery Image -->
             <figure class="gallery-image"> 
               <!-- Gallery Link --> 
-              <a href="img/gallery/coffee-tea-02.jpg" class="gallery-item"> <img src="img/gallery/coffee-tea-02.jpg" class="img-responsive" width="1200" height="800"> </a> 
+              <a href="img/gallery/coffee-tea-02.jpg" class="gallery-item"> <%= image_tag 'gallery/coffee-tea-02.jpg', class: 'img-responsive', width: '1200', height: '800' %> </a> 
               <!-- /.Gallery Link --> 
             </figure>
             <!-- /.Gallery Image --> 
@@ -486,7 +485,7 @@
             <figure class="gallery-image"> 
               
               <!-- Gallery Link --> 
-              <a href="img/gallery/desert-01.jpg" class="gallery-item"> <img src="img/gallery/desert-01.jpg" class="img-responsive" width="1200" height="800"> </a> 
+              <a href="img/gallery/desert-01.jpg" class="gallery-item"> <%= image_tag 'gallery/desert-01.jpg', class: 'img-responsive', width: '1200', height: '800'%> </a> 
               <!-- /.Gallery Link --> 
               
             </figure>
@@ -504,7 +503,7 @@
             <!-- Gallery Image -->
             <figure class="gallery-image"> 
               <!-- Gallery Link --> 
-              <a href="img/gallery/desert-04.jpg" class="gallery-item"> <img src="img/gallery/desert-04.jpg" class="img-responsive" width="1200" height="800"> </a> 
+              <a href="img/gallery/desert-04.jpg" class="gallery-item"> <%= image_tag 'gallery/desert-04.jpg', class: 'img-responsive', width: '1200', height: '800' %> </a> 
               <!-- /.Gallery Link --> 
             </figure>
             <!-- /.Gallery Image --> 
@@ -520,7 +519,9 @@
           <div class="single-item drinks "> 
             
             <!-- Gallery Image -->
-            <figure class="gallery-image"> <a href="img/gallery/specialty-drinks-03.jpg" class="gallery-item"> <img src="img/gallery/specialty-drinks-03.jpg" class="img-responsive" width="1200" height="800"> </a> 
+            <figure class="gallery-image"> <a href="img/gallery/specialty-drinks-03.jpg" class="gallery-item">
+              <%= image_tag 'gallery/specialty-drinks-03.jpg', class: 'img-responsive', width: '1200', height: '800' %>
+            </a> 
               <!-- /.Gallery Link --> 
             </figure>
             <!-- /.Gallery Image --> 
@@ -536,7 +537,9 @@
             <!-- Gallery Image -->
             <figure class="gallery-image"> 
               <!-- Gallery Link --> 
-              <a href="img/gallery/desert-06.jpg" class="gallery-item"> <img src="img/gallery/desert-06.jpg" class="img-responsive" width="1200" height="800"> </a> 
+              <a href="img/gallery/desert-06.jpg" class="gallery-item">
+                <%= image_tag 'gallery/desert-06.jpg', class: 'img-responsive', width: '1200', height: '800' %>
+              </a> 
               <!-- /.Gallery Link --> 
             </figure>
             <!-- /.Gallery Image --> 
@@ -552,7 +555,9 @@
             <!-- Gallery Image -->
             <figure class="gallery-image"> 
               <!-- Gallery Link --> 
-              <a href="img/gallery/party-food-01.jpg" class="gallery-item"> <img src="img/gallery/party-food-01.jpg" class="img-responsive" width="1200" height="800"> </a> 
+              <a href="img/gallery/party-food-01.jpg" class="gallery-item">
+                <%= image_tag 'gallery/party-food-01.jpg', class: 'img-responsive', width: '1200', height: '800' %>
+              </a> 
               <!-- /.Gallery Link --> 
             </figure>
             <!-- /.Gallery Image --> 
@@ -568,7 +573,9 @@
             <!-- Gallery Image -->
             <figure class="gallery-image"> 
               <!-- Gallery Link --> 
-              <a href="img/gallery/specialty-drinks-05.jpg" class="gallery-item"> <img src="img/gallery/specialty-drinks-05.jpg" class="img-responsive" width="1200" height="800"> </a> 
+              <a href="img/gallery/specialty-drinks-05.jpg" class="gallery-item">
+                <%= image_tag 'gallery/specialty-drinks-05.jpg', class: 'img-responsive', width: '1200', height: '800' %>
+              </a> 
               <!-- /.Gallery Link --> 
             </figure>
             <!-- /.Gallery Image --> 
@@ -584,7 +591,9 @@
             <!-- Gallery Image -->
             <figure class="gallery-image"> 
               <!-- Gallery Link --> 
-              <a href="img/gallery/party-food-05.jpg" class="gallery-item"> <img src="img/gallery/party-food-05.jpg" class="img-responsive" width="1200" height="800"> </a> 
+              <a href="img/gallery/party-food-05.jpg" class="gallery-item">
+                <%= image_tag 'gallery/party-food-05.jpg', class: 'img-responsive', width: '1200', height: '800' %>
+              </a> 
               <!-- /.Gallery Link --> 
             </figure>
             <!-- /.Gallery Image --> 
@@ -600,7 +609,9 @@
             <!-- Gallery Image -->
             <figure class="gallery-image"> 
               <!-- Gallery Link --> 
-              <a href="img/gallery/desert-02.jpg" class="gallery-item"> <img src="img/gallery/desert-02.jpg" class="img-responsive" width="1200" height="800"> </a> 
+              <a href="img/gallery/desert-02.jpg" class="gallery-item">
+                <%= image_tag 'gallery/desert-02.jpg', class: 'img-responsive', width: '1200', height: '800' %>
+              </a> 
               <!-- /.Gallery Link --> 
             </figure>
             <!-- /.Gallery Image --> 
@@ -616,7 +627,9 @@
             <!-- Gallery Image -->
             <figure class="gallery-image"> 
               <!-- Gallery Link --> 
-              <a href="img/gallery/party-food-02.jpg" class="gallery-item"> <img src="img/gallery/party-food-02.jpg" class="img-responsive" width="1200" height="800"> </a> 
+              <a href="img/gallery/party-food-02.jpg" class="gallery-item">
+                <%= image_tag 'gallery/party-food-02.jpg', class: 'img-responsive', width: '1200', height: '800' %>
+              </a> 
               <!-- /.Gallery Link --> 
             </figure>
             <!-- /.Gallery Image --> 
@@ -632,7 +645,9 @@
             <!-- Gallery Image -->
             <figure class="gallery-image"> 
               <!-- Gallery Link --> 
-              <a href="img/gallery/party-food-04.jpg" class="gallery-item"> <img src="img/gallery/party-food-04.jpg" class="img-responsive" width="1200" height="800"> </a> 
+              <a href="img/gallery/party-food-04.jpg" class="gallery-item">
+                <%= image_tag 'gallery/party-food-04.jpg', class: 'img-responsive', width: '1200', height: '800' %>
+              </a> 
               <!-- /.Gallery Link --> 
             </figure>
             <!-- /.Gallery Image --> 
@@ -648,7 +663,9 @@
             <!-- Gallery Image -->
             <figure class="gallery-image"> 
               <!-- Gallery Link --> 
-              <a href="img/gallery/coffee-tea-02.jpg" class="gallery-item"> <img src="img/gallery/coffee-tea-02.jpg" class="img-responsive" width="1200" height="800"> </a> 
+              <a href="img/gallery/coffee-tea-02.jpg" class="gallery-item">
+                <%= image_tag 'gallery/coffee-tea-02.jpg', class: 'img-responsive', width: '1200', height: '800' %>
+              </a> 
               <!-- /.Gallery Link --> 
             </figure>
             <!-- /.Gallery Image --> 
@@ -687,7 +704,7 @@
       <div class="border">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <p class="mrgn30-btm"><img alt="border" class="img-responsive center-block" height="26" src="img/border.svg" width="177"></p>
+            <p class="mrgn30-btm"><%= image_tag 'border.svg', alt: 'border', class: 'img-responsive center-block', height: '26', width: '177' %></p>
           </div>
         </div>
       </div>
@@ -715,9 +732,10 @@
       <!-- Event 01 -->
       
       <div class="col-sm-6 text-center">
-        <div class=" bounceIn wow"> <img alt="Joe Stuart at Full Spoon Cafe" class=
-                    "img-responsive center-block" height="600" src=
-                    "img/events/event-01.jpg" width="800"> </div>
+        <div class=" bounceIn wow">
+          <%= image_tag 'events/event-01.jpg', alt: 'Joe Stuart at Full Spoon Cafe', 
+            class: 'img-responsive center-block', height: '600',  width: '800'%>
+          </div>
         <div class="fadeInUp wow">
           <p class="mrgn20-top text-left">Joe Stuart returns to Full
             Spoon Cafe this Friday to present his new album. Tickets at
@@ -730,10 +748,11 @@
       
       <!-- Event 02 -->
       <div class="col-sm-6 text-center">
-        <div class=" bounceIn wow"> <img alt=
-                    "Splash Graffiti Studio exhibit latest works at Full Spoon Cafe"
-                    class="img-responsive center-block" height="600" src=
-                    "img/events/event-02.jpg" width="800"> </div>
+        <div class=" bounceIn wow">
+          <%= image_tag 'events/event-02.jpg', 
+            alt: 'Splash Graffiti Studio exhibit latest works at Full Spoon Cafe', 
+            class: 'img-responsive center-block', height: '600', width: '800'%>
+          </div>
         <div class="fadeInUp wow">
           <p class="mrgn20-top text-left">The guys from Splash
             Graffiti Studio decided to show us their new projects. Come
@@ -772,7 +791,7 @@
       <div class="border">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <p class="mrgn30-btm"><img alt="border" class="img-responsive center-block" height="26" src="img/border-white.svg" width="177"></p>
+            <p class="mrgn30-btm"><%= image_tag 'border.svg', alt: 'border', class: 'img-responsive center-block', height: '26', width: '177' %></p>
           </div>
         </div>
       </div>
@@ -785,7 +804,7 @@
       
       <div class="col-sm-3">
         <div class=" bounceIn wow">
-          <div class="team-member"> <img alt="Julie" class="img-responsive img-thumb" src="img/team/julie.jpg">
+          <div class="team-member"> <%= image_tag 'team/julie.jpg', alt: 'Julie', class: 'img-responsive img-thumb' %>
             <h3>Julie</h3>
             <p>Founder & Master Baker</p>
           </div>
@@ -796,7 +815,7 @@
       <!-- Team Member 02 -->
       <div class="col-sm-3">
         <div class=" bounceIn wow">
-          <div class="team-member"> <img alt="Matt" class="img-responsive img-thumb" src="img/team/matt.jpg">
+          <div class="team-member"> <%= image_tag 'team/matt.jpg', alt: 'Matt', class: 'img-responsive img-thumb' %>
             <h3>Matt</h3>
             <p>Founder & Drinks Master</p>
           </div>
@@ -807,7 +826,7 @@
       <!-- Team Member 03 -->
       <div class="col-sm-3">
         <div class=" bounceIn wow">
-          <div class="team-member"> <img alt="Paul" class="img-responsive img-thumb" src="img/team/paul.jpg">
+          <div class="team-member"> <%= image_tag 'team/paul.jpg', alt: 'Paul', class: 'img-responsive img-thumb' %>
             <h3>Paul</h3>
             <p>Chef, Baker & Artist</p>
           </div>
@@ -818,7 +837,7 @@
       <!-- Team Member 04 -->
       <div class="col-sm-3">
         <div class=" bounceIn wow">
-          <div class="team-member"> <img alt="Andy" class="img-responsive img-thumb" src="img/team/andy.jpg">
+          <div class="team-member"> <%= image_tag 'team/andy.jpg', alt: 'Andy', class: 'img-responsive img-thumb' %>
             <h3>Andy</h3>
             <p>Event and Party Planner</p>
           </div>
@@ -916,9 +935,9 @@
         <div class="fadeInDown wow">
           <h2 class="section-heading">Contact <span class=
                     "orange-accent">Us</span></h2>
-          <p><img alt="Contact Us" class=
-                    "img-responsive center-block" src=
-                    "img/bits/fork-knife.svg"> </p>
+          <p>
+            <%= image_tag 'bits/fork-knife.svg', alt: 'Contact Us', class: 'img-responsive center-block'%>
+          </p>
           <p class="text-uppercase mrgn20-btm">138 Princes St<br>
             Edinburgh, EH2 KL, Scotland<br>
             0131 588 6214</p>
@@ -972,7 +991,7 @@
       <div class="border">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <p class="mrgn30-btm"><img alt="border" class="img-responsive center-block" height="26" src="img/border.svg" width="177"></p>
+            <p class="mrgn30-btm"><%= image_tag 'border.svg', alt: 'border', class: 'img-responsive center-block', height: '26', width: '177' %></p>
           </div>
         </div>
       </div>

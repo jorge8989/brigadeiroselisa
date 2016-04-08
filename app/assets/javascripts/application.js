@@ -21,7 +21,6 @@
 //= require ./fullspoon/cbpAnimatedHeader.min
 //= require ./fullspoon/wow.min
 //= require ./fullspoon/owl-carousel/owl.carousel
-//= require ./fullspoon/video/bgvideo/backgroundVideo
 //= require ./fullspoon/fullspoon
 //= require ./fullspoon/jqBootstrapValidation
 //= require ./fullspoon/contact_me
